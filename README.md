@@ -1,47 +1,51 @@
-# AI Smart Nutrition Analyzer
+# 🧠 AI Smart Nutrition Analyzer
 
-## Overview
-
-AI Smart Nutrition Analyzer is a deep learning-based web application that classifies fruits and vegetables from uploaded images and displays their estimated calorie information per 100 grams.
-
-The application is built using TensorFlow/Keras for image classification, Streamlit for the user interface, and Flask for providing a REST API.
+An AI-powered web application that classifies fruits and vegetables from uploaded images and provides their estimated calorie information per 100 grams using a deep learning model.
 
 ---
 
-## Features
+## 📌 Overview
 
-- Classifies 36 different fruits and vegetables
-- Deep learning model built using TensorFlow and Keras
-- User-friendly Streamlit interface
-- Displays estimated calories per 100 grams
-- REST API using Flask
-- Image upload support
-- Fast image prediction
+AI Smart Nutrition Analyzer is a Computer Vision project developed using **Python, TensorFlow/Keras, Streamlit, and Flask**. The application can identify **36 different fruits and vegetables** from an image and instantly display the predicted item along with its nutritional calorie information.
+
+The project also includes a REST API for integrating the prediction model into other applications.
 
 ---
 
-## Technologies Used
+## 🚀 Features
+
+- 🍎 Classifies **36 different fruits and vegetables**
+- 🤖 Deep Learning model built using TensorFlow/Keras
+- 📷 Upload image for instant prediction
+- 🔥 Displays estimated calories (per 100 grams)
+- 🥦 Identifies whether the item is a Fruit or Vegetable
+- 🌐 Interactive Streamlit web interface
+- 🔗 Flask REST API for prediction
+
+---
+
+## 🛠️ Tech Stack
 
 - Python
 - TensorFlow
 - Keras
+- NumPy
 - Streamlit
 - Flask
-- NumPy
 - Pillow
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
 ```
 AI_Smart_Nutrition_Analyzer/
 │
-├── App.py
-├── ec2_api.py
-├── Fruits_Vegetable_Classification.py
-├── Fruit_Veg_Classification_Mobilenet.ipynb
+├── app.py
+├── api.py
 ├── FV.h5
+├── Fruit_Veg_Classification_Mobilenet.ipynb
+├── Fruits_Vegetable_Classification.py
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
@@ -50,7 +54,51 @@ AI_Smart_Nutrition_Analyzer/
 
 ---
 
-## Supported Classes
+## 🖥️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/shivkumar-biradar/AI_Smart_Nutrition_Analyzer.git
+```
+
+Move into the project folder:
+
+```bash
+cd AI_Smart_Nutrition_Analyzer
+```
+
+Install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Run the Streamlit Application
+
+```bash
+streamlit run app.py
+```
+
+The application will open automatically in your browser.
+
+---
+
+## ▶️ Run the Flask API
+
+```bash
+python api.py
+```
+
+The API will start locally and can be accessed using HTTP POST requests.
+
+---
+
+## 📊 Supported Categories
+
+The model recognizes **36 categories**, including:
 
 - Apple
 - Banana
@@ -83,7 +131,7 @@ AI_Smart_Nutrition_Analyzer/
 - Radish
 - Soy Beans
 - Spinach
-- Sweet Corn
+- Sweetcorn
 - Sweet Potato
 - Tomato
 - Turnip
@@ -91,75 +139,47 @@ AI_Smart_Nutrition_Analyzer/
 
 ---
 
-## Installation
+## 📷 Application Workflow
 
-Clone the repository
-
-```bash
-git clone https://github.com/your-username/AI_Smart_Nutrition_Analyzer.git
-```
-
-Move into the project folder
-
-```bash
-cd AI_Smart_Nutrition_Analyzer
-```
-
-Install the required packages
-
-```bash
-pip install -r requirements.txt
-```
+1. Upload an image.
+2. Image is preprocessed.
+3. Deep Learning model predicts the class.
+4. Application displays:
+   - Predicted item
+   - Fruit/Vegetable category
+   - Estimated calories per 100g
 
 ---
 
-## Running the Streamlit Application
+## 📸 Screenshots
 
-```bash
-streamlit run App.py
-```
+Add screenshots here after uploading images.
 
----
+Example:
 
-## Running the Flask API
-
-```bash
-python ec2_api.py
-```
+- Home Page
+- Prediction Result
+- Calorie Information
 
 ---
 
-## Model
+## 📈 Future Improvements
 
-The project uses a trained TensorFlow/Keras model (`FV.h5`) to classify fruit and vegetable images.
-
-Input image size:
-
-```
-224 × 224 pixels
-```
-
-Total classes:
-
-```
-36
-```
+- Multiple object detection
+- Nutrition facts (Protein, Carbohydrates, Fat)
+- BMI Calculator
+- Voice assistance
+- Mobile application
+- Cloud deployment
 
 ---
 
-## Future Improvements
+## 👨‍💻 Author
 
-- Nutritional information beyond calories
-- Confidence score for predictions
-- Mobile responsive interface
-- Food quantity estimation
-- Barcode scanning
-- Multi-object detection
+**Shivkumar Biradar**
 
----
+Computer Science Engineering Graduate
 
-## Author
+GitHub:
+https://github.com/shivkumar-biradar
 
-Shivkumar Biradar
-
-Computer Science and Engineering
