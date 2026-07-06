@@ -59,13 +59,13 @@ AI_Smart_Nutrition_Analyzer/
 Clone the repository:
 
 ```bash
-git clone https://github.com/shivkumar-biradar/AI_Smart_Nutrition_Analyzer.git
+git clone https://github.com/shivkumar-biradar/AI-Smart-Nutrition-Analyzer.git
 ```
 
 Move into the project folder:
 
 ```bash
-cd AI_Smart_Nutrition_Analyzer
+cd AI-Smart-Nutrition-Analyzer
 ```
 
 Install the required packages:
@@ -83,16 +83,6 @@ streamlit run app.py
 ```
 
 The application will open automatically in your browser.
-
----
-
-## ▶️ Run the Flask API
-
-```bash
-python api.py
-```
-
-The API will start locally and can be accessed using HTTP POST requests.
 
 ---
 
