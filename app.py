@@ -18,9 +18,10 @@ labels = {
 }
 
 vegetables = [
-    "Beetroot", "Cabbage", "Capsicum", "Carrot", "Cauliflower", "Corn", "Cucumber", "Eggplant", "Ginger",
-    "Lettuce", "Onion", "Peas", "Potato", "Raddish", "Soy Beans", "Spinach", "Sweetcorn", "Sweetpotato",
-    "Tomato", "Turnip"
+    "Beetroot", "Bell pepper", "Cabbage", "Capsicum", "Carrot", "Cauliflower", 
+    "Chilli pepper", "Corn", "Cucumber", "Eggplant", "Garlic", "Ginger", 
+    "Jalepeno", "Lettuce", "Onion", "Paprika", "Peas", "Potato", "Raddish", 
+    "Soy beans", "Spinach", "Sweetcorn", "Sweetpotato", "Tomato", "Turnip"
 ]
 
 def fetch_calories(prediction):
